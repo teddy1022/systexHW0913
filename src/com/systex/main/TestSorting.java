@@ -45,6 +45,8 @@ public class TestSorting {
 			case "1" : 
 				Collections.sort(dates);
 				break;
+			default:
+				Collections.sort(dates,Comparator.reverseOrder());
 		}
 		
 		dates.forEach(d->System.out.println(d));
